@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 📝 Shabd-Setu Blog Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive blog platform built with **React**, **TailwindCSS**, and **React Router**.  
+It features elegant blog detail pages, gradient backgrounds, interactive comments, and a clean card-based UI.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 📖 **Blog Listing & Detail Pages**  
+  Browse blogs on the home page and view full details with thumbnail, subtitle, author info, and content.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🎨 **Modern UI with TailwindCSS**  
+  Responsive design with gradient backgrounds, smooth shadows, and frosted-glass effects.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🖼️ **Dynamic Thumbnails**  
+  Blog thumbnails are styled with a **16:9 aspect ratio** (like video screens) for consistency.  
 
-### `npm test`
+- 💬 **Interactive Comments**  
+  Add, like, reply, and share comments with live updates.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔄 **Smooth Navigation**  
+  Uses `react-router-dom` for client-side routing and `ScrollToTop` utility to reset scroll on navigation.  
 
-### `npm run build`
+- 🌟 **Reusable Components**  
+  Header, Blog cards, filters, trending authors, and more — built as modular React components.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Frontend**
+- [React 19](https://react.dev/) — UI framework  
+- [React Router v7](https://reactrouter.com/) — routing  
+- [TailwindCSS 3](https://tailwindcss.com/) — utility-first CSS  
+- [Lucide React](https://lucide.dev/) — icon set  
+- [Motion](https://motion.dev/) — animations  
 
-### `npm run eject`
+**Tooling**
+- `react-scripts` — Create React App build scripts  
+- `postcss`, `autoprefixer` — CSS processing  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Testing**
+- `@testing-library/react`, `@testing-library/jest-dom`, `@testing-library/dom`, `@testing-library/user-event`  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Performance**
+- `web-vitals` — Core Web Vitals metrics  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 Project Structure
 
-## Learn More
+src/
+│ App.js # Main app entry
+│ App.css # Global styles
+│ index.js # React DOM entry
+│ index.css # Tailwind base styles
+│ reportWebVitals.js # Performance monitoring
+│ setupTests.js # Testing setup
+│
+├── components/ # Reusable UI components
+│ ├── Add_comment.jsx # Comment section with like/reply/share
+│ ├── ArticleCard.jsx # Blog preview card for homepage
+│ ├── BlogDetail.jsx # Blog detail view (title, subtitle, thumbnail, content)
+│ ├── BlogDetail.module.css # Extra styling for blog content
+│ ├── FilterBar.jsx # Category filter bar
+│ ├── Header.jsx # Navbar / header section
+│ ├── Latest_Blogs.jsx # Latest blogs listing
+│ ├── Login.jsx # Simple login form
+│ ├── ScrollToTop.jsx # Forces scroll to top on route change
+│ ├── Temp.jsx # Temporary/testing component
+│ ├── TrendingAuthors.jsx # Sidebar with trending authors
+│ ├── Wellcome_Part.jsx # Welcome/intro section
+│
+├── data/ # Static data sources
+│ ├── authors.js
+│ ├── blog.js
+│ ├── comments.js
+│ ├── filters.js
+│
+└── pages/ # Page-level components
+├── Home.jsx # Homepage with blog list
+└── BlogDetail_page.jsx # Blog detail page wrapper (gradient bg + comments)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## ⚙️ Setup & Installation
 
-### Analyzing the Bundle Size
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/shabd-setu.git
+   cd shabd-setu
+2. **Install dependencies**
+    npm install
+3. **Run the development server**
+    npm start
+4. **Open in browser:**
+    http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## 📸 Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Home Page**
+    ![alt text](<Screenshot 2025-09-18 201614.png>)
+    ![alt text](<Screenshot 2025-09-18 201632.png>)
+2. **Blog Detail page**
+    ![alt text](<Screenshot 2025-09-18 201722.png>)
+    ![alt text](<Screenshot 2025-09-18 201817.png>)
+    ![alt text](<Screenshot 2025-09-18 201840.png>)
