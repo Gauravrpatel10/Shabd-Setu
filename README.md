@@ -50,41 +50,7 @@ It features elegant blog detail pages, gradient backgrounds, interactive comment
 
 ## 📂 Project Structure
 
-src/
-│ App.js # Main app entry
-│ App.css # Global styles
-│ index.js # React DOM entry
-│ index.css # Tailwind base styles
-│ reportWebVitals.js # Performance monitoring
-│ setupTests.js # Testing setup
-│
-├── components/ # Reusable UI components
-│ ├── Add_comment.jsx # Comment section with like/reply/share
-│ ├── ArticleCard.jsx # Blog preview card for homepage
-│ ├── BlogDetail.jsx # Blog detail view (title, subtitle, thumbnail, content)
-│ ├── BlogDetail.module.css # Extra styling for blog content
-│ ├── FilterBar.jsx # Category filter bar
-│ ├── Header.jsx # Navbar / header section
-│ ├── Latest_Blogs.jsx # Latest blogs listing
-│ ├── Login.jsx # Simple login form
-│ ├── ScrollToTop.jsx # Forces scroll to top on route change
-│ ├── Temp.jsx # Temporary/testing component
-│ ├── TrendingAuthors.jsx # Sidebar with trending authors
-│ ├── Wellcome_Part.jsx # Welcome/intro section
-│
-├── data/ # Static data sources
-│ ├── authors.js
-│ ├── blog.js
-│ ├── comments.js
-│ ├── filters.js
-│
-└── pages/ # Page-level components
-├── Home.jsx # Homepage with blog list
-└── BlogDetail_page.jsx # Blog detail page wrapper (gradient bg + comments)
-
-
-
----
+![alt text](image.png)
 
 ## ⚙️ Setup & Installation
 
